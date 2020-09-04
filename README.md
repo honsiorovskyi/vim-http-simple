@@ -8,7 +8,7 @@ Simple HTTP Client for Vim (Work in progress)
 Dependencies:
 
 - socat: http://www.dest-unreach.org/socat/
-
+- openssl: https://www.openssl.org/ (or libressl: https://www.libressl.org/)
 
 ### Using vim-plug
 
