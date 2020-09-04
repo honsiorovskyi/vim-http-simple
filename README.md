@@ -5,6 +5,11 @@ Simple HTTP Client for Vim (Work in progress)
 
 ## Installation
 
+Dependencies:
+
+- socat: http://www.dest-unreach.org/socat/
+
+
 ### Using vim-plug
 
 Add the following to your `~/.vimrc`:
