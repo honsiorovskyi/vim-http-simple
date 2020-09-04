@@ -8,7 +8,7 @@ syn match Comment '#.*$'
 syn match Comment '//.*$'
 
 " request
-syn region httpRequest start='\c^\%(HEAD\|GET\|POST\|PUT\|PATCH\|DELETE\|OPTIONS\)' end='\c\ze\n\+\%(HEAD\|GET\|POST\|PUT\|PATCH\|DELETE\|OPTIONS\)' contains=httpRequestSignature,httpHeaderName,httpJSON,httpResponse fold
+syn region httpRequest start='\c^\%(HEAD\|GET\|POST\|PUT\|PATCH\|DELETE\|OPTIONS\)' end='\c\ze\n\+\%(HEAD\|GET\|POST\|PUT\|PATCH\|DELETE\|OPTION\|HTTP/[0-9\.]*\)' contains=httpRequestSignature,httpHeaderName,httpJSON fold
 syn match httpRequestSignature '\c^\%(HEAD\|GET\|POST\|PUT\|PATCH\|DELETE\|OPTIONS\)' contained nextgroup=httpRequestURL skipwhite
 syn match httpRequestURL '\c.*HTTP'me=e-4 contained nextgroup=httpRequestVersion
 syn match httpRequestVersion '.*' contained
